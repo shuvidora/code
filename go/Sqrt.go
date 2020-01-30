@@ -8,7 +8,7 @@ import (
 // Sqrt returns the square root of x.
 func Sqrt(x float64) (z float64) {
 
-    if x <= 0 || math.IsNaN(x) || math.IsInf(x, 1) {
+    if x <= 0 || x == 1 || math.IsNaN(x) || math.IsInf(x, 1) {
         return x
     }
 
